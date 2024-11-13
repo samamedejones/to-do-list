@@ -15,6 +15,7 @@ export default createGlobalStyle`
   }
 
   button, a {
+    text-decoration: none;
     cursor: pointer;
     transition: filter 0.2s;
     
