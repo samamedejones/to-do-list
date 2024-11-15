@@ -40,4 +40,5 @@ export const Content = styled.div`
 export const NewNote = styled.button`
      grid-area: newnote;
      background-color: orange;
+     
 `
