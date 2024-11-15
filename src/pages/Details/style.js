@@ -49,6 +49,10 @@ export const Content = styled.div`
     padding-top: 64px;
   }
 
-  
+  > p {
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: justify;
+  }
   
 `
