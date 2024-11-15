@@ -43,7 +43,11 @@ export const Content = styled.div`
     align-self: end;
   }
 
- 
+  > h1 {
+    font-size: 36px;
+    font-weight: 500;
+    padding-top: 64px;
+  }
 
   
   
