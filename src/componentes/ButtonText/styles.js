@@ -8,6 +8,4 @@ export const Container = styled.button`
     border: none;
     font-size: 16px;
 
-    align-self: flex-end;
-
 `
