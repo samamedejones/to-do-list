@@ -19,12 +19,32 @@ export const Container = styled.div`
 
 export const Brand = styled.div`
     grid-area: brand;
-    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+    border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
+
+    > h1 {
+          font-size: 24px;
+          color: ${({ theme }) => theme.COLORS.ORANGE};
+    }
 `
+
 
 export const Menu = styled.ul`
      grid-area: menu;
-     background-color: green;
+     background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+
+     padding-top: 64px;
+     text-align: center;
+
+     > li {
+          margin-bottom: 24px;
+     }
+
 `
 
 export const Search = styled.div`

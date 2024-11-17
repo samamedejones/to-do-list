@@ -3,6 +3,7 @@ import { Header } from "../../componentes/Header"
 
 
 import React from 'react'
+import ButtonText from "../../componentes/ButtonText"
 
 export default function Home() {
   return (
@@ -14,6 +15,10 @@ export default function Home() {
         <Header/>
 
         <Menu>
+          <li><ButtonText title="teste 1"/></li>
+          <li><ButtonText title="teste 2"/></li>
+          <li><ButtonText title="teste 3"/></li>
+
 
         </Menu>
 
