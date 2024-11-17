@@ -15,9 +15,9 @@ export default function Home() {
         <Header/>
 
         <Menu>
-          <li><ButtonText title="teste 1"/></li>
-          <li><ButtonText title="teste 2"/></li>
-          <li><ButtonText title="teste 3"/></li>
+          <li><ButtonText title="Todos" isActive /></li>
+          <li><ButtonText title="React"/></li>
+          <li><ButtonText title="NodeJS"/></li>
 
 
         </Menu>
