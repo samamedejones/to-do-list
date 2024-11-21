@@ -1,10 +1,10 @@
 import { Container } from "./styles"
 
 
-export function Note({ }) {
+export function Note({ data, ...rest }) {
 
     return (
-        <Container>
+        <Container {...rest}>
             
         </Container>
     )
