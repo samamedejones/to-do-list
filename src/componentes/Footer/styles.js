@@ -5,4 +5,7 @@ export const Container = styled.footer`
 
     margin: 0;
     padding: 0;
+
+    font-size: 24px;
+    border: none;
 `
