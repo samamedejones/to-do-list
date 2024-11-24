@@ -6,6 +6,6 @@ export const Container = styled.footer`
     margin: 10;
     padding: 10;
 
-    font-size: 24px;
-    border: none;
+    font-size: 20px;
+    border: 1px solid black;
 `
