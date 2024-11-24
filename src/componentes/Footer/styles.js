@@ -11,4 +11,7 @@ export const Container = styled.footer`
 
     height: 400px;
     width: 100%;
+
+    color: aliceblue;
+    background-color: aqua;
 `
