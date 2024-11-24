@@ -8,4 +8,7 @@ export const Container = styled.footer`
 
     font-size: 20px;
     border: 1px solid black;
+
+    height: 400px;
+    width: 100%;
 `
