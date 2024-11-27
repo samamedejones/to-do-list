@@ -20,7 +20,7 @@ export default function Home() {
 
         <Menu>
           <li><ButtonText title="Todos" isActive /></li>
-          <li><ButtonText title="React"/></li>
+          <li><ButtonText title="React"/></li> 
           <li><ButtonText title="NodeJS"/></li>
 
 
@@ -33,7 +33,7 @@ export default function Home() {
         <Content>
           <Section title="Minhas Notas">
             <Note data={{
-              title: "React", 
+              title: "Teste", 
               tags: [
                 {id: "1", name: "react"},
                 {id: "2", name: "rockeatseat"}
