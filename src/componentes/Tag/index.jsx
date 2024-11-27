@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container } from './styles'
 
-export default function Tag( { title } ) {
+export default function Tag( { title, ...rest } ) {
   return (
-    <Container>
+    <Container {...rest}>
       {title}
     </Container>
-  )
+  )git
 }
