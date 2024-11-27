@@ -6,6 +6,8 @@ import { Header } from "../../componentes/Header"
 import React from 'react'
 import ButtonText from "../../componentes/ButtonText"
 import { Input } from "../../componentes/Input"
+import { Section } from "../../componentes/Section"
+import { Note } from "../../componentes/Note"
 
 export default function Home() {
   return (
@@ -29,7 +31,9 @@ export default function Home() {
         </Search>
 
         <Content>
-
+          <Section tittle="Minhas Notas">
+            <Note data={}/>
+          </Section>
         </Content>
 
         <NewNote>
