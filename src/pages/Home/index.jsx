@@ -32,7 +32,13 @@ export default function Home() {
 
         <Content>
           <Section tittle="Minhas Notas">
-            <Note data={}/>
+            <Note data={{
+              title: "React", 
+              tags: [
+                {id: "1", name: "react"},
+                {id: "2", name: "rockeatseat"}
+              ]
+              }}/>
           </Section>
         </Content>
 
