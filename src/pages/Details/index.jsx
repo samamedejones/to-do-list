@@ -34,7 +34,7 @@ export function Details() {
 
           </Section>
 
-          <Section tittle="Marcadores">
+          <Section title="Marcadores">
             <Tag title="express"/>
 
           </Section>

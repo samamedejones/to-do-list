@@ -31,7 +31,7 @@ export default function Home() {
         </Search>
 
         <Content>
-          <Section tittle="Minhas Notas">
+          <Section title="Minhas Notas">
             <Note data={{
               title: "React", 
               tags: [

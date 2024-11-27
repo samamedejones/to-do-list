@@ -6,5 +6,5 @@ export default function Tag( { title, ...rest } ) {
     <Container {...rest}>
       {title}
     </Container>
-  )git
+)
 }
