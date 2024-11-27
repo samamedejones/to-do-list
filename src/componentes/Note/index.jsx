@@ -12,7 +12,9 @@ export function Note({ data, ...rest }) {
                 <footer>
                     {
                         data.tags.map(tags => {
-                            <span></span>
+                            <span key={tags.id}>
+                                {tag.name}
+                            </span>
                         })
                     }
                 </footer>
