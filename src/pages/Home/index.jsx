@@ -36,7 +36,8 @@ export default function Home() {
               title: "Teste", 
               tags: [
                 {id: "1", name: "react"},
-                {id: "2", name: "rockeatseat"}
+                {id: "2", name: "rockeatseat"},
+                {id: "2", name: "javascript"},
               ]
               }}/>
           </Section>
