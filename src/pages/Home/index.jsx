@@ -39,7 +39,9 @@ export default function Home() {
                 {id: "2", name: "rockeatseat"},
                 {id: "3", name: "javascript"},
                 {id: "4", name: "css"},
-                {id: "4", name: "js note"}
+                {id: "4", name: "js note"},
+                {id: "4", name: "thml note"}
+
               ]
               }}/>
           </Section>
