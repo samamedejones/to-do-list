@@ -47,9 +47,10 @@ export default function Home() {
               }}/>
 
 <Note data={{
-              title: "Teste 2", 
+              title: "Mental", 
               tags: [
-                {id: "1", name: "react"}
+                {id: "1", name: "foco"},
+                {id: "2", name: "mental"}
                 
               ]
               }}/>
