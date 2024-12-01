@@ -50,7 +50,9 @@ export default function Home() {
               title: "Mental", 
               tags: [
                 {id: "1", name: "foco"},
-                {id: "2", name: "mental"}
+                {id: "2", name: "mental"},
+                {id: "3", name: "constancia"},
+                {id: "4", name: "estudo"}
                 
               ]
               }}/>
