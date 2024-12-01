@@ -40,7 +40,7 @@ export default function Home() {
                 {id: "3", name: "javascript"},
                 {id: "4", name: "css"},
                 {id: "5", name: "js note"},
-                {id: "6", name: "thml note"},
+                {id: "6", name: "html note"},
                 {id: "7", name: "teste"}
 
               ]
