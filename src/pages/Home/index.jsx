@@ -60,7 +60,8 @@ export default function Home() {
             <Note data={{
               title: "Rotina", 
               tags: [
-                {id: "1", name: "café da manhã"}
+                {id: "1", name: "café da manhã"},
+                {id: "2", name: "revisão"}
                
                 
               ]
