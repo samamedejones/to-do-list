@@ -33,7 +33,7 @@ export default function Home() {
         <Content>
           <Section title="Minhas Notas">
             <Note data={{
-              title: "Teste", 
+              title: "Estudos", 
               tags: [
                 {id: "1", name: "react"},
                 {id: "2", name: "rockeatseat"},
@@ -46,13 +46,20 @@ export default function Home() {
               ]
               }}/>
 
-<Note data={{
+            <Note data={{
               title: "Mental", 
               tags: [
                 {id: "1", name: "foco"},
                 {id: "2", name: "mental"},
                 {id: "3", name: "constancia"},
                 {id: "4", name: "estudo"}
+                
+              ]
+              }}/>
+
+            <Note data={{
+              title: "Rotina", 
+              tags: [
                 
               ]
               }}/>
