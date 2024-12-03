@@ -61,7 +61,8 @@ export default function Home() {
               title: "Rotina", 
               tags: [
                 {id: "1", name: "café da manhã"},
-                {id: "2", name: "revisão"}
+                {id: "2", name: "revisão"},
+                {id: "2", name: "assistir aula"}
                
                 
               ]
