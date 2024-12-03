@@ -62,7 +62,7 @@ export default function Home() {
               tags: [
                 {id: "1", name: "café da manhã"},
                 {id: "2", name: "revisão"},
-                {id: "2", name: "assistir aula"}
+                {id: "3", name: "assistir aula"}
                
                 
               ]
