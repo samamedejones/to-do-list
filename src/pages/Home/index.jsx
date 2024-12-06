@@ -63,7 +63,8 @@ export default function Home() {
                 {id: "1", name: "café da manhã"},
                 {id: "2", name: "revisão"},
                 {id: "3", name: "assistir aula"},
-                {id: "4", name: "almoçar"}
+                {id: "4", name: "almoçar"},
+                {id: "5", name: "ler"}
                
                 
               ]
