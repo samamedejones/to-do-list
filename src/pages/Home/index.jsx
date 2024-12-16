@@ -72,7 +72,7 @@ export default function Home() {
               }}/>
           </Section>
         </Content>
-
+ 
         <NewNote>
           <FiPlus/>
           Criar Notas
