@@ -63,8 +63,6 @@ export default function Home() {
                 {id: "2", name: "revisão"},
                 {id: "3", name: "assistir aula"},
                 {id: "4", name: "almoçar"},
-                {id: "5", name: "ler"},
-                {id: "6", name: "escrever"}
               ]
               }}/>
           </Section>
