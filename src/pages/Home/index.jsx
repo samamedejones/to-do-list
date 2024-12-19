@@ -56,11 +56,6 @@ export default function Home() {
                 
               ]
               }}/>
-            <Note data={{
-              title: "Rotina", 
-              tags: [
-              ]
-              }}/>
           </Section>
         </Content>
  
