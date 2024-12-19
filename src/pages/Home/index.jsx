@@ -60,9 +60,8 @@ export default function Home() {
               title: "Rotina", 
               tags: [
                 {id: "1", name: "café da manhã"},
-                {id: "2", name: "revisão"},
-                {id: "3", name: "assistir aula"},
-                {id: "4", name: "almoçar"},
+                {id: "2", name: "revisão"}
+      
               ]
               }}/>
           </Section>
