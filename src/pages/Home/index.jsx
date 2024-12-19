@@ -53,7 +53,6 @@ export default function Home() {
                 {id: "2", name: "mental"},
                 {id: "3", name: "constancia"},
                 {id: "4", name: "estudo"}
-                
               ]
               }}/>
           </Section>
