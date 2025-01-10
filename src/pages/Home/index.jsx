@@ -55,6 +55,7 @@ export default function Home() {
                 {id: "4", name: "estudo"}
               ]
               }}/>
+              
           </Section>
         </Content>
  
