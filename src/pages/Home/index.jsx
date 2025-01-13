@@ -9,7 +9,7 @@ import { Input } from "../../componentes/Input"
 import { Section } from "../../componentes/Section"
 import { Note } from "../../componentes/Note"
 
-export default function Home() {
+export function Home() {
   return (
    <Container>
         <Brand>
@@ -59,7 +59,7 @@ export default function Home() {
           </Section>
         </Content>
  
-        <NewNote>
+        <NewNote to="/new">
           <FiPlus/>
           Criar Notas
         </NewNote>
