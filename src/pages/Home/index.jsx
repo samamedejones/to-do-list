@@ -36,23 +36,7 @@ export function Home() {
               title: "Estudos", 
               tags: [
                 {id: "1", name: "react"},
-                {id: "2", name: "rockeatseat"},
-                {id: "3", name: "javascript"},
-                {id: "4", name: "css"},
-                {id: "5", name: "js note"},
-                {id: "6", name: "html note"},
-                {id: "7", name: "teste"},
-                {id: "7", name: "teste"}
-              ]
-              }}/>
-
-            <Note data={{
-              title: "Mental", 
-              tags: [
-                {id: "1", name: "foco"},
-                {id: "2", name: "mental"},
-                {id: "3", name: "constancia"},
-                {id: "4", name: "estudo"}
+                
               ]
               }}/>
               
