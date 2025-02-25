@@ -4,7 +4,7 @@ export default function ButtonText( {title, isActive, ...rest}) {
   return (
     <Container
     type="button"
-    isActive={isActive}
+    $isActive={isActive}
     {...rest}
     >
       {title}
