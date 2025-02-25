@@ -16,6 +16,17 @@ import { Note } from "../../componentes/Note"
 export function Home() {
 
   const [ tags, setTags ] = useState([])
+  const [ tagSelected, setTagSelected ] = useState([])
+
+
+  function handleTagSelected(tagName){
+    if(tagSelected.includes(tagName)){
+      setTagSelected(tagSelected.filter(tag => tag !== tagName))
+    } else{
+    setTagSelected(prevState => [...prevState, tagName])
+  }
+    console.log(tagSelected)
+  }
 
 
 
@@ -36,10 +47,23 @@ export function Home() {
         <Header/>
 
         <Menu>
-            <li><ButtonText title="Todos" isActive /></li>
+            <li>
+              <ButtonText 
+                title="Todos" 
+                isActive={tagSelected.length === 0}
+              />
+            </li>
           {
             tags && tags.map(tag => (
-            <li key={String(tag.id)}><ButtonText title={tag.name}/></li>
+            <li 
+              key={String(tag.id)}
+            >
+            <ButtonText 
+              title={tag.name}
+              onClick={()=> handleTagSelected(tag.name)}
+              isActive={tagSelected.includes(tag.name)}
+              />
+              </li>
            ))
           }
         </Menu>
