@@ -1,3 +1,7 @@
+import { useParams, useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { api } from '../../services/api'
+
 import { Container, Links, Content } from './style'
 import { Header } from '../../componentes/Header'
 import { Button } from '../../componentes/Button'
@@ -6,19 +10,34 @@ import Tag from '../../componentes/Tag'
 import ButtonText from '../../componentes/ButtonText'
 
 export function Details() {
+  const [ data, setData ] = useState(null)
+  const params = useParams()
+
+
+  useEffect(()=> {
+    async function fetchData() {
+      const response = await api.get(`/notes/${params.id}`)
+      setData(response.data)
+    }
+    fetchData()
+
+  },[])
+
+  console.log(data)
 
 
   return (
     <Container>
       <Header/>
 
-
       <main>
         <Content>
 
           <ButtonText title="Excluir notas"/>
-
-          <h1>Introdução ao React</h1>
+          {
+          data &&
+          <h1>{data.note.title}</h1>
+          }
             <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa veniam labore. Fuga dicta ex magni. Sunt modi tenetur quidem vitae, officiis fugiat, ullam dicta saepe velit, quas libero quia!
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus recusandae vitae magnam aperiam rem ratione deleniti! Praesentium architecto aliquam itaque illum, soluta harum odio saepe debitis, qui, sapiente voluptatum eius.
