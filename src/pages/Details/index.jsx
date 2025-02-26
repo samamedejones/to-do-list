@@ -30,28 +30,31 @@ export function Details() {
     <Container>
       <Header/>
 
-      <main>
+      {
+      data &&
+        <main>
         <Content>
 
           <ButtonText title="Excluir notas"/>
           {
-          data &&
           <h1>{data.note.title}</h1>
           }
-            <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste ipsa veniam labore. Fuga dicta ex magni. Sunt modi tenetur quidem vitae, officiis fugiat, ullam dicta saepe velit, quas libero quia!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus recusandae vitae magnam aperiam rem ratione deleniti! Praesentium architecto aliquam itaque illum, soluta harum odio saepe debitis, qui, sapiente voluptatum eius.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam in ratione consequatur odio, accusamus corporis fugit animi asperiores mollitia, dignissimos recusandae id voluptatibus minus harum impedit obcaecati illo, deleniti voluptas!
-            </p>
 
+          <p>{data.note.description}</p>
 
-          <Section tittle="Lins Uteis">
-            <Links>
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-            </Links>
-
-          </Section>
+          {
+          data.links &&
+            <Section title="Links Uteis">
+              <Links>
+              {
+                data.links.map((link)=> (
+                <li><a href={link.url}>{link.url}</a></li>
+                ))
+              }
+              </Links>
+            </Section>
+          }
+          
 
           <Section title="Marcadores">
             <Tag title="express"/>
@@ -62,6 +65,9 @@ export function Details() {
 
         </Content>
       </main>
+      }
+      
+
     </Container>
     
 )
