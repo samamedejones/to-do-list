@@ -71,7 +71,7 @@ export function New() {
         })
 
         alert("Nota cadastrada com sucesso")
-        navigate("/")
+        navigate(-1)
     }
 
     return(

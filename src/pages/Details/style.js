@@ -49,6 +49,10 @@ export const Content = styled.div`
     padding-top: 64px;
   }
 
+  h1::first-letter, p::first-letter {
+  text-transform: uppercase;
+  }
+
   > p {
     font-size: 16px;
     margin-top: 16px;

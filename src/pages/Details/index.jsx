@@ -9,9 +9,13 @@ import { Section } from '../../componentes/Section'
 import Tag from '../../componentes/Tag'
 import ButtonText from '../../componentes/ButtonText'
 
+
+
 export function Details() {
   const [ data, setData ] = useState(null)
   const params = useParams()
+  const navigate = useNavigate()
+
 
 
   useEffect(()=> {
@@ -48,20 +52,26 @@ export function Details() {
               <Links>
               {
                 data.links.map((link)=> (
-                <li><a href={link.url}>{link.url}</a></li>
+                <li><a href={link.url} target='_blank'>{link.url}</a></li>
                 ))
               }
               </Links>
             </Section>
           }
           
+          {
+            data.tags &&
+            <Section title="Marcadores">
+              {
+                data.tags.map((tag)=> (
+                  <Tag title={tag.name}/>  
+                ))
+              }
 
-          <Section title="Marcadores">
-            <Tag title="express"/>
+            </Section>
+          }
 
-          </Section>
-
-          <Button title="Voltar"/>
+          <Button title="Voltar" onClick={() => navigate(-1)}/>
 
         </Content>
       </main>
