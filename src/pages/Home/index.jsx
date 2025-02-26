@@ -17,12 +17,15 @@ export function Home() {
 
   const [ tags, setTags ] = useState([])
   const [ tagSelected, setTagSelected ] = useState([])
-
+  const [ searchNote, setSeartchNote ] = useState("")
+  const [ notes, setNotes ] = useState([])
 
   function handleTagSelected(tagName){
-    if(tagSelected.includes(tagName)){
+    const alreadySelected = tagSelected.includes(tagName)
+    if(alreadySelected){
       setTagSelected(tagSelected.filter(tag => tag !== tagName))
-    } else{
+    } 
+    else{
     setTagSelected(prevState => [...prevState, tagName])
   }
     console.log(tagSelected)
@@ -38,6 +41,14 @@ export function Home() {
     fetchTags()
   },[])
 
+  useEffect(()=>{
+    async function fetchNotes() {
+      const response = await api.get(`/notes?title=${searchNote}&tags=${tagSelected}`)
+      setNotes(response.data)
+    }
+    fetchNotes()
+  },[tagSelected, searchNote])
+
   return (
    <Container>
         <Brand>
@@ -51,6 +62,7 @@ export function Home() {
               <ButtonText 
                 title="Todos" 
                 isActive={tagSelected.length === 0}
+                onClick={()=> setTagSelected([])}
               />
             </li>
           {
@@ -69,19 +81,20 @@ export function Home() {
         </Menu>
 
         <Search>
-          <Input placeholder="Pesquisar pelo título" icon={FiSearch}/>
+          <Input 
+            placeholder="Pesquisar pelo título" 
+            icon={FiSearch}
+            onChange={(e) => setSeartchNote(e.target.value)}
+          />
         </Search>
 
         <Content>
           <Section title="Minhas Notas">
-            <Note data={{
-              title: "Estudos", 
-              tags: [
-                {id: "1", name: "react"},
-                
-              ]
-              }}/>
-              
+            {
+              notes.map((note)=>(
+                <Note key={note.id} data={note}/>
+              ))
+            }
           </Section>
         </Content>
  
