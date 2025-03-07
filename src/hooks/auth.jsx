@@ -4,7 +4,9 @@ import { api } from "../services/api";
 
 export const AuthContext = createContext({})
 
+
 function AuthProvider({ children }){
+
     const [data, setData] = useState({})
 
     async function signIn({ email, password }) {
@@ -35,7 +37,6 @@ function AuthProvider({ children }){
         localStorage.removeItem("@rockeatseat:user")
 
         setData({})
-        console.log(data)
     }
 
     async function updateProfile( { user, avatarFile } ) {
